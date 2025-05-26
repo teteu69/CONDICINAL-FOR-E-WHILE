@@ -1,0 +1,96 @@
+#include <stdio.h>
+#include <locale.h>
+#include <windows.h>
+#include <iostream>
+#include <vector>
+#include <string>
+
+int main(){
+	
+	int numero, categoria;
+		
+printf("\nPRODUTOS DE LIMP = 1");
+printf("\nPRODUTOS EM GRAUS = 2");
+    printf("\n=========================================================== ");
+
+	
+printf("\nDIGA UM CATEGORIA DE PRODUTOS QUE GOSTARIA DE COMPRAR:");
+scanf("%d",&categoria);
+
+if(categoria == 1){
+	
+printf("PRODUTOS DE LIMPEZA");
+
+	printf("\n=========================================================== ");
+	printf("\nPAPEL HIGIENICO: 1 ");
+	printf(" \nAGUA SANITARIA: 2 ");
+	printf(" \nDESENFETANTE: 3 ");
+	printf(" \nSABAO EM PO: 4 ");
+	printf("\nLUSTRA-MOVEIS: 5 ");
+	printf("\n=========================================================== ");
+
+	printf("\ndigite um numero por favor: ");
+	scanf("%d",&numero);
+	
+		switch(numero){
+			
+			case 1: 
+			printf("\nSua escolha foi papel higienico valor de 12,99: ",numero);
+			break;
+			case 2: 
+			printf("\nSua escolha Agua Sanitaria valor de 3,50: ",numero);
+			break;
+			case 3: 
+			printf("\nSua escolha foi Desenfetante valor de 2,99: ",numero);
+			break;
+			case 4: 
+			printf("\nSua escolha foi Sabao em Po valor de 12,99: ",numero);
+			break;
+			
+			
+			default:
+			printf("Opcao invalida Tente novamente.");			
+			 
+}		
+}
+else if (categoria == 2){
+	
+	printf("PRODUTOS DE GRAUS");	
+    printf("\n=========================================================== ");
+	printf("\nARROZ: 6 ");
+	printf(" \nFEIJAO: 7 ");
+	printf(" \nAÇUCAR: 8 ");
+	printf(" \nFARINHA DE TRIGO: 9 ");
+	printf("\nMILHO PARA PIPOCA: 10 ");
+	printf("\n=========================================================== ");
+	
+	printf("\ndigite um numero por favor: ");
+	scanf("%d",&numero);
+	
+		switch(numero){
+			
+			case 5: 
+			printf("\nSua escolha foi ARROZ valor de 7,59: ",numero);
+			break;
+			case 6: 
+			printf("\nSua escolha foi FEIJAO valor de 8.59: ",numero);
+			break;
+			case 7: 
+			printf("\nSua escolha ACUCAR valor de 3,50: ",numero);
+			break;
+			case 8: 
+			printf("\nSua escolha FARINHA DE TRIGO valor de 5,99: ",numero);
+			break;
+			case 9: 
+			printf("\nSua escolha foi MILHO PARA PIPOCA valor de 3,99: ",numero);
+			break;
+			
+			default:
+			printf("Opcao invalida Tente novamente."); 			 
+}
+}
+else{
+	
+	printf("Opcao invalida Tente novamente."); 
+}	              
+}
